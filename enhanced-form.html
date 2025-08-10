@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Web Dev Project</title>
+    <style>
+        /* Simple styling - I'm still learning CSS */
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .form-section {
+            background: #f5f5f5;
+            padding: 15px;
+            margin-top: 20px;
+        }
+        .required-field {
+            color: red;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+    </style>
+</head>
+<body>
+    <h1>My Website Form Project</h1>
+    
+    <!-- Content I learned in class -->
+    <section>
+        <h2>Course Schedule</h2>
+        <table>
+            <tr>
+                <th>Day</th>
+                <th>Course</th>
+                <th>Time</th>
+            </tr>
+            <tr>
+                <td>Monday</td>
+                <td>Web Development</td>
+                <td>9:00 AM</td>
+            </tr>
+            <tr>
+                <td>Wednesday</td>
+                <td>Database Systems</td>
+                <td>11:00 AM</td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- My first attempt at media elements -->
+    <section>
+        <h2>Media Examples</h2>
+        <p>Here's a placeholder image:</p>
+        <img src="placeholder.jpg" alt="Example image" width="400">
+        
+        <p>Audio example (not working yet):</p>
+        <audio controls>
+            <source src="audio.mp3" type="audio/mpeg">
+            Audio not supported
+        </audio>
+    </section>
+
+    <!-- Registration Form -->
+    <div class="form-section">
+        <h2>Sign Up Form</h2>
+        <form id="signup-form">
+            <div>
+                <label for="name">Full Name <span class="required-field">*</span></label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            
+            <div>
+                <label for="email">Email <span class="required-field">*</span></label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            
+            <div>
+                <label>Gender:</label>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+            </div>
+            
+            <div>
+                <label for="birthdate">Birth Date:</label>
+                <input type="date" id="birthdate" name="birthdate">
+            </div>
+            
+            <div>
+                <label for="password">Password <span class="required-field">*</span></label>
+                <input type="password" id="password" name="password" required minlength="6">
+            </div>
+            
+            <div>
+                <label for="interests">Your Interests:</label>
+                <select id="interests" name="interests">
+                    <option value="">Select...</option>
+                    <option value="sports">Sports</option>
+                    <option value="music">Music</option>
+                    <option value="tech">Technology</option>
+                </select>
+            </div>
+            
+            <div>
+                <input type="checkbox" id="newsletter" name="newsletter">
+                <label for="newsletter">Subscribe to newsletter</label>
+            </div>
+            
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <footer>
+        <p>Created for my Web Development class</p>
+    </footer>
+</body>
+</html>
